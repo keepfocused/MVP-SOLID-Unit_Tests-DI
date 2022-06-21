@@ -18,12 +18,14 @@
 		83041A512857F9BE0077D733 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83041A502857F9BE0077D733 /* Comment.swift */; };
 		83041A542857FA260077D733 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83041A532857FA260077D733 /* MainPresenter.swift */; };
 		83041A592858024C0077D733 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83041A582858024C0077D733 /* MainViewController.xib */; };
-		83041A5B285803A90077D733 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83041A5A285803A90077D733 /* ModuleBuilder.swift */; };
+		83041A5B285803A90077D733 /* AssemblyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83041A5A285803A90077D733 /* AssemblyModuleBuilder.swift */; };
 		83041A5D285809180077D733 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83041A5C285809170077D733 /* MainPresenterTest.swift */; };
+		831F9FFB285AF5D500FCEAB7 /* RouterMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831F9FFA285AF5D500FCEAB7 /* RouterMain.swift */; };
 		8350CF7628597F8B00D9BF67 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350CF7528597F8B00D9BF67 /* NetworkService.swift */; };
 		8350CF792859D4A500D9BF67 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350CF782859D4A500D9BF67 /* DetailPresenter.swift */; };
 		8350CF7D2859D74300D9BF67 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8350CF7C2859D74300D9BF67 /* DetailView.xib */; };
 		8350CF7F2859D76600D9BF67 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350CF7E2859D76600D9BF67 /* DetailViewController.swift */; };
+		838F6CB428613FD500670048 /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F6CB328613FD500670048 /* RouterTest.swift */; };
 		83C8378F285A874D00A8166B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C8378D285A874D00A8166B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -60,12 +62,14 @@
 		83041A502857F9BE0077D733 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		83041A532857FA260077D733 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		83041A582858024C0077D733 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		83041A5A285803A90077D733 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		83041A5A285803A90077D733 /* AssemblyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModuleBuilder.swift; sourceTree = "<group>"; };
 		83041A5C285809170077D733 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		831F9FFA285AF5D500FCEAB7 /* RouterMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMain.swift; sourceTree = "<group>"; };
 		8350CF7528597F8B00D9BF67 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8350CF782859D4A500D9BF67 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		8350CF7C2859D74300D9BF67 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		8350CF7E2859D76600D9BF67 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		838F6CB328613FD500670048 /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RouterTest.swift; path = "MVP+SOLID+Unit_Tests+DITests/RouterTest.swift"; sourceTree = SOURCE_ROOT; };
 		83C8378E285A874D00A8166B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,10 +121,11 @@
 		83041A1F2857F9630077D733 /* MVP+SOLID+Unit_Tests+DI */ = {
 			isa = PBXGroup;
 			children = (
-				83041A5A285803A90077D733 /* ModuleBuilder.swift */,
+				83041A5A285803A90077D733 /* AssemblyModuleBuilder.swift */,
+				831F9FFA285AF5D500FCEAB7 /* RouterMain.swift */,
 				8350CF7B2859D6EC00D9BF67 /* Detail Module */,
-				8350CF7728597FAC00D9BF67 /* Service Layer */,
 				83041A55285801A40077D733 /* Main Module */,
+				8350CF7728597FAC00D9BF67 /* Service Layer */,
 				83041A202857F9630077D733 /* AppDelegate.swift */,
 				83041A222857F9630077D733 /* SceneDelegate.swift */,
 				83041A292857F9650077D733 /* Assets.xcassets */,
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				83041A5C285809170077D733 /* MainPresenterTest.swift */,
+				838F6CB328613FD500670048 /* RouterTest.swift */,
 			);
 			path = TestMainModule;
 			sourceTree = "<group>";
@@ -366,7 +372,8 @@
 				8350CF792859D4A500D9BF67 /* DetailPresenter.swift in Sources */,
 				83041A512857F9BE0077D733 /* Comment.swift in Sources */,
 				83041A232857F9630077D733 /* SceneDelegate.swift in Sources */,
-				83041A5B285803A90077D733 /* ModuleBuilder.swift in Sources */,
+				831F9FFB285AF5D500FCEAB7 /* RouterMain.swift in Sources */,
+				83041A5B285803A90077D733 /* AssemblyModuleBuilder.swift in Sources */,
 				8350CF7628597F8B00D9BF67 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83041A382857F9650077D733 /* MVP_SOLID_Unit_Tests_DITests.swift in Sources */,
+				838F6CB428613FD500670048 /* RouterTest.swift in Sources */,
 				83041A5D285809180077D733 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

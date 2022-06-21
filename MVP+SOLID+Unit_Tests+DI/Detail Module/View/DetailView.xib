@@ -19,16 +19,33 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vR9-8M-HFb">
-                    <rect key="frame" x="39" y="152" width="337" height="592"/>
-                    <autoresizingMask key="autoresizingMask"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vR9-8M-HFb">
+                    <rect key="frame" x="39" y="723.5" width="337" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uy0-se-MBL">
+                    <rect key="frame" x="174" y="812" width="67" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="Iif-8O-uHy"/>
+                        <constraint firstAttribute="height" constant="31" id="bmg-dO-9cj"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="pop"/>
+                    <connections>
+                        <action selector="tapAction:" destination="-1" eventType="touchUpInside" id="p5n-FV-iga"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uy0-se-MBL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="174" id="4ty-IX-eTd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uy0-se-MBL" secondAttribute="bottom" constant="19" id="9Mg-W6-nEg"/>
+                <constraint firstItem="uy0-se-MBL" firstAttribute="top" secondItem="vR9-8M-HFb" secondAttribute="bottom" constant="68" id="dq3-b9-Vsa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uy0-se-MBL" secondAttribute="trailing" constant="173" id="iBh-np-thQ"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
         </view>
     </objects>
